@@ -37,7 +37,7 @@ def dcm2avi(dcm_path, avi_path):
 
 def main():
     parser = argparse.ArgumentParser(description='Apply lung segmentation models to a CT volume')
-    parser.add_argument('-i', '--input', help='Input CT volume', type=str, required=True)
+    parser.add_argument('-i', '--input', help='Input dicom US volume', type=str, required=True)
     parser.add_argument('-o', '--output', help='Output avi file', required=True)
     #parser.add_argument('-f', '--frames_per_second', help='Frames per second', type=int, default=10)
     args = parser.parse_args()
